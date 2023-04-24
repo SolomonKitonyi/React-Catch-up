@@ -1,0 +1,34 @@
+{
+  "groups": [
+    {
+      "name": "Group 1",
+      "count": 5,
+      "id": 1
+    },
+    {
+      "name": "Group 2",
+      "count": 4,
+      "id": 2
+    },
+    {
+      "name": "Group 3",
+      "count": 4,
+      "id": 3
+    },
+    {
+      "name": "Group 4",
+      "count": "3",
+      "id": 4
+    },
+    {
+      "name": "Group 5",
+      "count": "4",
+      "id": 5
+    },
+    {
+      "name": "Group 6",
+      "count": "6",
+      "id": 6
+    }
+  ]
+}
