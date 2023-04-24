@@ -2,33 +2,38 @@
   "groups": [
     {
       "name": "Group 1",
-      "count": 5,
+      "count": "4",
       "id": 1
     },
     {
       "name": "Group 2",
-      "count": 4,
+      "count": "3",
       "id": 2
     },
     {
       "name": "Group 3",
-      "count": 4,
+      "count": "3",
       "id": 3
     },
     {
-      "name": "Group 4",
-      "count": "3",
-      "id": 4
-    },
-    {
       "name": "Group 5",
-      "count": "4",
+      "count": "8",
       "id": 5
     },
     {
       "name": "Group 6",
-      "count": "6",
+      "count": "4",
       "id": 6
+    },
+    {
+      "name": "Group 7",
+      "count": "9",
+      "id": 7
+    },
+    {
+      "name": "Group 10",
+      "count": 0,
+      "id": 8
     }
   ]
 }

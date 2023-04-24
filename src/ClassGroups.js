@@ -7,7 +7,6 @@ function  ClassGroups(props) {
 
     function handleFormSubmit(e) {
         e.preventDefault()
-        
         fetch("http://localhost:3000/groups",{
             method: "POST",
             headers: {
@@ -19,7 +18,11 @@ function  ClassGroups(props) {
             })
         })
         .then(res => res.json())
-        .then(data => props.setData([...props.groups,data]))
+        .then(data => {
+            props.setData([...props.groups,data])
+            setInputCount(0)
+            setInputName("")
+        })
     }
     
     return (
@@ -27,7 +30,9 @@ function  ClassGroups(props) {
         <div>Groups</div>
         <ol>
             {props.groups.map(group => (
-                <ClassGroupItem groupData= {group} key={group.name} />
+                <ClassGroupItem groupData= {group} key={group.name}
+                groups = {props.groups}
+                 setData={props.setData} />
             ))}
         </ol> 
         <form onSubmit={handleFormSubmit}>
@@ -40,8 +45,6 @@ function  ClassGroups(props) {
             <input 
             placeholder="count" 
             type="number"
-            value={inputCount}
-            onChange={(event) => setInputCount(event.target.value)}
             />
             <button>Add Group</button>
         </form>
